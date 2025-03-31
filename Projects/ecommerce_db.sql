@@ -1,1 +1,0 @@
--- Sample e-commerce database
