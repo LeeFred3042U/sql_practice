@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define base path
-BASE_PATH="/home/zeeshan/Coding/sql_practice/complete/valo_game_tracker"
+BASE_PATH="/home/zeeshan/Coding/sql_practice/valo_game_tracker"
 
 # Ensure required folders exist
 mkdir -p "$BASE_PATH/Basic"
