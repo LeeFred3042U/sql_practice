@@ -1,14 +1,11 @@
-#!/bin/bash
-
-# Define base path
 BASE_PATH="/home/zeeshan/Coding/sql_practice/valo_game_tracker"
 
-# Ensure required folders exist
+# Checking folders Existence
 mkdir -p "$BASE_PATH/Basic"
 mkdir -p "$BASE_PATH/Intermediate"
 mkdir -p "$BASE_PATH/Advanced"
 
-# Basic queries
+# Queries being entered in Basic folder
 cat <<EOF > "$BASE_PATH/Basic/match_info_queries.sql"
 -- List Players in Match
 SELECT p.player_name
@@ -34,7 +31,7 @@ JOIN weapons w ON pws.weapon_id = w.weapon_id
 WHERE w.weapon_name = 'Vandal';
 EOF
 
-# Intermediate queries
+# Adding things to intermediate
 cat <<EOF > "$BASE_PATH/Intermediate/player_weapon_agent_stats.sql"
 -- Player stats in a specific match
 SELECT kills, deaths, assists
@@ -59,7 +56,7 @@ ORDER BY usage_count DESC
 LIMIT 1;
 EOF
 
-# Advanced queries
+# Asking for Advaance questions ig since we need Advance level queries
 cat <<EOF > "$BASE_PATH/Advanced/kd_and_accuracy.sql"
 -- Locate player with the highest weapon accuracy
 SELECT p.player_name, 
